@@ -1,5 +1,6 @@
-CREATE VIEW V_CustomerOrderSummary as
+CREATE OR REPLACE VIEW V_CustomerOrderSummary AS
 SELECT State,
+  COUNT(O.CustomerID) as Num_of_Orders,
   AVG(TotalDue) as Avg_Due,
   MIN(TotalDue) as Min_Due,
   MAX(TotalDue) as Max_Due,

@@ -1,5 +1,3 @@
-SELECT CustomerID,
-  FirstName,
-  LastName
+SELECT *
 FROM Customer
 WHERE State IS NOT NULL

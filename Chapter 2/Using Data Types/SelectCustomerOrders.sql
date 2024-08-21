@@ -7,4 +7,4 @@ From Customer
   Customer.CustomerID = Orders.CustomerID
 GROUP BY Customer.CustomerID,
   FirstName,
-  LastName
+  LastName;
